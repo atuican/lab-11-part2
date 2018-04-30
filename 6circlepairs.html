@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<body onload="draw()">
+	<canvas id="sketch" width="500" height="500" style="border:1px solid #000000">
+	</canvas>
+</body>
+<script>	
+	function draw() {
+		var sketch = document.getElementById('sketch');
+		var context = sketch.getContext("2d");
+		
+		for (i=0; i<6; i++) {
+			if (i == 0) {
+				context.fillStyle = "#E50008";
+				context.beginPath();
+				context.arc(150, 150, 100, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+			}
+			
+			else if (i == 1) {
+				context.fillStyle = "#D40007";
+				context.beginPath();
+				context.arc(150, 150, 80, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+			}
+			
+			else if (i == 2) {
+				context.fillStyle = "#C40007";
+				context.beginPath();
+				context.arc(150, 150, 60, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+			}
+			
+			else if (i == 3) {
+				context.fillStyle = "#B30006";
+				context.beginPath();
+				context.arc(150, 150, 40, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+			}
+			
+			else if (i == 4) {
+				context.fillStyle = "#A30006";
+				context.beginPath();
+				context.arc(150, 150, 20, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+			}
+			
+			else if (i == 5) {
+				context.fillStyle = "#930106";
+				context.beginPath();
+				context.arc(150, 150, 10, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+			}
+	}
+	for (i=0; i<6; i++) {
+		if (i == 0) {
+			context.fillStyle = "#0F00E5";
+			context.beginPath();
+			context.arc(375, 150, 100, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+		}
+		
+		else if (i == 1) {
+			context.fillStyle = "#0E00D2";
+			context.beginPath();
+			context.arc(375, 150, 80, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+		}
+		
+		else if (i == 2) {
+			context.fillStyle = "#0D01BF";
+			context.beginPath();
+			context.arc(375, 150, 60, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+		}
+		
+		else if (i == 3) {
+			context.fillStyle = "#0C01AC";
+			context.beginPath();
+			context.arc(375, 150, 40, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+		}
+		
+		else if (i == 4) {
+			context.fillStyle = "#0B0299";
+			context.beginPath();
+			context.arc(375, 150, 20, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+		}
+		
+		else if (i == 5) {
+			context.fillStyle = "#0B0387";
+			context.beginPath();
+			context.arc(375, 150, 10, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+		}
+	}
+}
+</script>
+</body>
+</html>
