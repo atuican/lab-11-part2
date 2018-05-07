@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body onload="draw()">
+	<canvas id="sketch" width="240" height="240" style="border: 1px solid #000000">
+	</canvas>
+</body>
+<script>	
+	function draw() {
+		var sketch = document.getElementById('sketch');
+		var context = sketch.getContext("2d");
+		
+		for (i=0; i<4; i++) {
+			for (j=0; j<8; j++) {
+			context.fillStyle = "#000000";
+			context.fillRect(i*60, j*60, 30, 30);
+		}
+	}
+		
+		for (i=0; i<4; i++) {
+			for (j=0; j<8; j++) {
+			context.fillStyle = "#000000";
+			context.fillRect(i*60+30, j*60+30, 30, 30);
+		}
+	}
+		
+		for (i=0; i<4; i++) {
+			for (j=0; j<2; j++) {
+			context.fillStyle = "#0000ff";
+			context.beginPath();
+			context.arc(i*60+15, j*60+15, 12, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+		}
+	}
+		
+		for (i=0; i<4; i++) {
+			for (j=0; j<1; j++) {
+			context.fillStyle = "#0000ff";
+			context.beginPath();
+			context.arc(i*60+45, j*60+45, 12, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+		}
+	}
+		for (i=0; i<4; i++) {
+			for (j=3; j<4; j++) {
+			context.fillStyle = "#00ff00";
+			context.beginPath();
+			context.arc(i*60+15, j*60+15, 12, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+		}
+	}
+		for (i=0; i<4; i++) {
+			for (j=2; j<4; j++) {
+			context.fillStyle = "#00ff00";
+			context.beginPath();
+			context.arc(i*60+45, j*60+45, 12, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+		}
+	}
+}
+</script>
+</body>
+</html>
